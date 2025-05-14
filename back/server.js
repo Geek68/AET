@@ -21,7 +21,6 @@ app.post('/liste', (req, res) => {
           console.log(err);
           return res.status(500).send("Une erreur s'est produite lors de l'insertion des données.");
       } else {
-          console.log(resultats);
           return res.status(200).send("Données insérées avec succès.");
       }
   });
@@ -34,7 +33,6 @@ app.get('/liste', (req, res) => {
          console.log(err)
      }
      else{
-        console.log(resultats)
         res.send(resultats)
      }
     })
